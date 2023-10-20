@@ -1,0 +1,84 @@
+
+/* Estilos generales */
+body {
+    font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial', sans-serif;
+    background: -moz-linear-gradient();
+}
+
+  /* Contenedor principal */
+.users.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+  /* Formulario */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  /* Campos del formulario */
+input[type="email"],
+input[type="password"] {
+
+    font-family: "Open Sans", Calibri, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    color: #676056;
+    border: none;
+    background: #f7f3eb;
+    color: #777;
+    transition: color 0.3s ease-out;
+}
+
+  /* Botón de envío */
+input[type="submit"] {
+    position: relative;
+    margin: 10px auto;
+    width: 350px;
+    height: 50px;
+    background: #58c7d0;
+    border-radius: 7px;
+    cursor: pointer;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+        z-index: -1;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+    }
+
+}
+.submit {
+    text-align: center;
+}
+input[type="submit"]:hover {
+    background-color: #2957a4;
+}
+
+  /* Imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+  /* Mensajes de error */
+.flash-error {
+    color: red;
+}
